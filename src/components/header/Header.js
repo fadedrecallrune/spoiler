@@ -2,9 +2,9 @@ import React from "react";
 import "./Header.css";
 import Slider from "react-slick";
 
-import ff from "../../images/first2.webp";
-import kyiv from "../../images/kyiv2.webp";
-import door from "../../images/cardoor2.webp";
+
+import {Image, CloudinaryContext, Transformation} from 'cloudinary-react';
+
 
 const settings = {
   arrows: false,
@@ -22,8 +22,12 @@ const settings = {
 const Header = () => (
   <div className='header-container'>
     <Slider {...settings}>
+
+    <CloudinaryContext cloudName="dg28o9yt1">
       <div className="header-block">
-        <img src={kyiv} alt="" />
+        <Image style={{width:'100%', borderRadius:'6px'}} publicId="spoiler/kyiv.jpg" >
+          <Transformation fetchFormat='auto' />
+        </Image>
         <div className="header-caption">
           <h1>Автошкола в Киеве "СПОЙЛЕР"</h1>
           <p>ул. Драгоманова, 27а</p>
@@ -33,9 +37,13 @@ const Header = () => (
           </div>
         </div>
       </div>
+    </CloudinaryContext>
 
+    <CloudinaryContext cloudName="dg28o9yt1">
       <div className="header-block">
-        <img src={door} alt="" />
+        <Image style={{width:'100%', borderRadius:'6px'}} publicId="spoiler/cardoor.jpg" >
+          <Transformation fetchFormat='auto' />
+        </Image>
         <div className="header-caption">
           <h1>Автошкола в Киеве "СПОЙЛЕР"</h1>
           <p>Школа обучение безопасному вождению автомобиля в условиях города.</p>
@@ -44,9 +52,14 @@ const Header = () => (
           </div>
         </div>
       </div>
+    </CloudinaryContext>
 
+
+    <CloudinaryContext cloudName="dg28o9yt1">
       <div className="header-block">
-        <img src={ff} alt="" />
+        <Image style={{width:'100%', borderRadius:'6px'}} publicId="spoiler/first.jpg" >
+          <Transformation fetchFormat='auto' />
+        </Image>
         <div className="header-caption">
           <h1>Автошкола в Киеве "СПОЙЛЕР"</h1>
           <p>Лучшая цена и условия обучения на вождение в 2018 году.</p>
@@ -55,6 +68,8 @@ const Header = () => (
           </div>
         </div>
       </div>
+    </CloudinaryContext>
+
     </Slider>
   </div>
 );

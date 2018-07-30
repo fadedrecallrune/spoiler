@@ -3,8 +3,6 @@ import './Home.css'
 import {Image, CloudinaryContext, Transformation} from 'cloudinary-react';
 
 
-import car from '../../images/third2.webp'
-
 const ThirdBlock = () => (
   <div className='thirdblock-container'>
     <div className='colorblock'>
@@ -15,12 +13,11 @@ const ThirdBlock = () => (
       </div>
 
       <div className='secondblock-image'>
-      <CloudinaryContext cloudName="dg28o9yt1">
-      <Image style={{width:'100%', borderRadius:'6px'}} publicId="spoiler/third.jpg" >
-        <Transformation fetchFormat='auto' />
-</Image>
-</CloudinaryContext>
-       {/* <img  style={{width:'100%', borderRadius:'6px'}} src={car} alt='' /> */}
+        <CloudinaryContext cloudName="dg28o9yt1">
+        <Image style={{width:'100%', borderRadius:'6px'}} publicId="spoiler/third.jpg" >
+          <Transformation fetchFormat='auto' />
+        </Image>
+        </CloudinaryContext>
       </div>
 
     </div>

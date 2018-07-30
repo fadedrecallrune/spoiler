@@ -333,7 +333,7 @@
       rgba(20, 20, 20, 0.9),
       rgba(20, 20, 20, 0.6)
     ),
-    url("../../images/second2.webp");
+    url("http://res.cloudinary.com/dg28o9yt1/image/upload/v1532937265/spoiler/second.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;

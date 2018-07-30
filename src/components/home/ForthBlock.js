@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import { Image, CloudinaryContext, Transformation } from "cloudinary-react";
 
-import bwm from "../../images/44.webp";
 
 const ForthBlock = () => (
   <div className="forthblock-container">

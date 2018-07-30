@@ -1,15 +1,19 @@
 import React from 'react'
 import './Home.css'
 
-import megan from '../../images/megan2.webp'
+import {Image, CloudinaryContext, Transformation} from 'cloudinary-react';
+
 
 
 const SecondBlock = () => (
   <div className='secondblock-container'>
     <div className='colorblock'>
       <div className='secondblock-image'>
-       <img  style={{width:'100%', borderRadius:'6px'}} src={megan} alt='' />
-
+       <CloudinaryContext cloudName="dg28o9yt1">
+        <Image style={{width:'100%', borderRadius:'6px'}} publicId="spoiler/megan.jpg" >
+          <Transformation fetchFormat='auto' />
+        </Image>
+        </CloudinaryContext>
       </div>
 
       <div className='secondblock-text'>
