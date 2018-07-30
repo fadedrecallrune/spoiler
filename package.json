@@ -7,20 +7,19 @@
     "preact": "^8.2.9",
     "preact-compat": "^3.18.0",
     "react": "^16.4.1",
-    "react-bootstrap": "^0.32.1",
+    "react-app-rewire-preact": "^1.0.1",
+    "react-app-rewired": "^1.5.2",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
     "react-responsive-carousel": "^3.1.41",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "react-slick": "^0.23.1",
-    "react-sticky-header": "^0.1.9",
-    "reactjs-popup": "^1.1.1",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

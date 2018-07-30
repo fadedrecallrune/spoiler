@@ -18,8 +18,8 @@ class AboutUs extends Component {
         <Image className='route-image' publicId="spoiler/pexels-photo-70912.jpg" >
           <Transformation height="945" width="1880" crop="scale" fetchFormat='auto' />
         </Image>
-        <div className='route-caption'>
-          <h1>Автошкола в Киеве "Спойлер"</h1>
+        <div className='route-caption-aus'>
+          <h1 >Автошкола в Киеве "Спойлер"</h1>
         </div>
         </div>
         </CloudinaryContext>
