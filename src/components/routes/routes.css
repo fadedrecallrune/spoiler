@@ -49,7 +49,15 @@
   justify-content: center;
   align-items: center;
 }
-.route-caption, .route-caption-aus > h1 {
+ .route-caption-aus > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -1.6px;
+  word-spacing: 0.16px;
+
+}
+.route-caption > h1 {
   font-size: 48px;
   font-weight: 700;
   text-align: center;
@@ -87,7 +95,7 @@
   .route-caption-aus {
     width: 100%;
     left: 0;
-    top: -75%;
+    top: -85%;
   }
 }
 
