@@ -8,10 +8,14 @@ import ForthBlock from './ForthBlock';
 import Prices from './Prices';
 import Map from './Map'
 import Hours from './Hours';
+import Header from '../header/Header';
 
 
 const Home = () => (
   <div className=''>
+
+    <Header />
+
     <FirstBlock />
     <SecondBlock />
     <ThirdBlock />

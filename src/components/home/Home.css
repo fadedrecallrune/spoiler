@@ -199,6 +199,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform .2s;
+  
+}
+.secondblock-button:hover{
+  transform: scale(1.2)
 }
 .secondblock-button > a {
   text-decoration: none;

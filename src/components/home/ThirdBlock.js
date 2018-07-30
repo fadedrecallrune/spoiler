@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import {Image, CloudinaryContext, Transformation} from 'cloudinary-react';
+import { Link } from 'react-router-dom'
 
 
 const ThirdBlock = () => (
@@ -9,7 +10,7 @@ const ThirdBlock = () => (
       <div className='secondblock-text'>
        <h1  >Наш Автопарк</h1>
        <p style={{ margin:'5% 0'}} >Обучение проводится на автомобилях на любой вкус: класса А - Daewoo Matiz до внедорожника - SsangYong Kyron. В Вашем распоряжении автомобили с автоматической коробкой передач, а также автомобили с традиционной механической коробкой передач.</p>
-        <div className='secondblock-button'>Наш Автопарк</div>
+       <Link style={{textDecoration:'none', color:'white'}} className='secondblock-button' to='/autopark'><div >Наш Автопарк</div></Link>
       </div>
 
       <div className='secondblock-image'>

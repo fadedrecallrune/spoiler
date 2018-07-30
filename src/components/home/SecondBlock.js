@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import { Link } from 'react-router-dom'
 
 import {Image, CloudinaryContext, Transformation} from 'cloudinary-react';
 
@@ -19,7 +20,7 @@ const SecondBlock = () => (
       <div className='secondblock-text'>
         <h1  >Автошкола "Спойлер"</h1>
         <p style={{fontFamily:'roboto', margin:'5% 0'}} >Наша автошкола была организована в 1998 году, и на протяжении всего времени своего существования мы сохраняем высокое качество подготовки наших слушателей, а также стремимся сделать процесс обучения максимально комфортным для вас.</p>
-        <div className='secondblock-button'>Автошкола "Спойлер</div>
+        <Link style={{textDecoration:'none', color:'white'}} className='secondblock-button' to='/aboutus'><div >Наш Автопарк</div></Link>
 
       </div>
     </div>
